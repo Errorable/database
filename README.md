@@ -16,9 +16,7 @@ var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
 
-// IdError
-// NotLoggedIn
-// NotFound
+// Error
 ```
 ## License
 
