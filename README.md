@@ -16,8 +16,9 @@ var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableDatabase, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableDatabase, 'en-US').errors;
 
-console.log(cnErrors.Error.message); //数据库错误！
-console.log(enUsErrors.Error.message); //Database Error!
+//DatabaseError
+console.log(cnErrors.DatabaseError.message); //数据库错误！
+console.log(enUsErrors.DatabaseError.message); //Database Error!
 
 ```
 ## License

@@ -19,7 +19,7 @@ describe('errorable-database', function () {
   it('should have database errors in zh-CN!', function () {
     var count = 0;
     var errors = {
-      Error: '数据库错误！'
+      DatabaseError: '数据库错误！'
     };
     for (var k in errors) {
       if (typeof errors[k] === 'string') {
@@ -33,7 +33,7 @@ describe('errorable-database', function () {
   it('should have database errors in en-US!', function () {
     var count = 0;
     var errors = {
-      Error: 'Database Error!'
+      DatabaseError: 'Database Error!'
     };
 
     for (var k in errors) {
