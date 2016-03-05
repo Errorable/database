@@ -13,10 +13,12 @@ $ npm install --save errorable-database
 var errorable = require('errorable');
 var errorableDatabase = require('errorable-database');
 var Generator = errorable.Generator;
-var cnErrors = new Generator(errorableOrder, 'zh-CN').errors;
-var enUsErrors = new Generator(errorableOrder, 'en-US').errors;
+var cnErrors = new Generator(errorableDatabase, 'zh-CN').errors;
+var enUsErrors = new Generator(errorableDatabase, 'en-US').errors;
 
-// Error
+console.log(cnErrors.Error.message); //数据库错误！
+console.log(enUsErrors.Error.message); //Database Error!
+
 ```
 ## License
 
